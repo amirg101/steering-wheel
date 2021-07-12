@@ -136,7 +136,7 @@
 	var horn = document.createElement("audio");
 	horn.src = "horn.m4a";
 
-	var menuStrings = ["Right", "Right", "Right", "Left", "Left", "Left"]
+	var menuStrings = ["", "Right", "Right", "Left", "Left", "Left"]
 	var loadStrings = ["Loading,...", "Loading....", "Loading....", "Loading....", "Loading....", "Loading...."]
 	var menuCycle = 2 * Math.PI / 6;
 
@@ -215,6 +215,7 @@
 		document.getElementById("menu").innerHTML = menuStrings[item];
 		menuItemNum = item;
 
+		document.getElementById("load").innerHTML = '';
 	}
 
 	function selectMenuItem() {
